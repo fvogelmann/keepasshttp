@@ -37,8 +37,11 @@ namespace KeePassHttp
                                                 };
 
         private const int DEFAULT_NOTIFICATION_TIME = 5000;
-        public const string KEEPASSHTTP_NAME = "KeePassHttp Settings";
-        private const string KEEPASSHTTP_GROUP_NAME = "KeePassHttp Passwords";
+        /// KEEPASSHTTP_NAME and KEEPASSHTTP_GROUP_NAME used to be constants but must be variables in order to add the user name and device name to them
+        ///public const string KEEPASSHTTP_NAME = "KeePassHttp Settings";
+        ///private const string KEEPASSHTTP_GROUP_NAME = "KeePassHttp Passwords";
+        public string KEEPASSHTTP_NAME = "KeePassHttp Settings";
+        private string KEEPASSHTTP_GROUP_NAME = "KeePassHttp Passwords";
         public const string ASSOCIATE_KEY_PREFIX = "AES Key: ";
         private IPluginHost host;
         private HttpListener listener;
